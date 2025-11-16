@@ -1,31 +1,52 @@
-# project_2
+# 🛒 ShopEase – E-Commerce Backend (Node.js + Express + MySQL)
 
-#🛒 ShopEase – Simple E-Commerce Backend (Node.js + Express + MySQL)
+ShopEase is a simple and interactive e-commerce backend built with **Node.js**, **Express.js**, **EJS**, **Multer**, and **MySQL2**.  
+This project includes **user authentication**, **product uploads**, **image handling**, and an **admin panel**.
 
-ShopEase is a lightweight e-commerce backend built using Node.js, Express.js, EJS, MySQL2, and Multer for image uploads.
-It includes user authentication, product upload with images, and an admin panel.
+---
 
-##🚀 Features
+## 🚀 Features
 
--User Registration & Login
--Simple Session-Based Authentication
--Product Upload (image + title + price + description)
--Image storage using Multer
--MySQL Database Integration
--EJS Templating for UI
--Admin Panel
--Basic Home Page for Logged-In Users
+- User Registration & Login  
+- Session-based Authentication  
+- Product Upload (Title + Price + Description + Image)  
+- Image Upload using **Multer**  
+- MySQL Database Integration  
+- EJS UI Templates  
+- Admin Panel with Delete Options  
+- Fully Interactive Interface  
 
-##📁project structure
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|-----------|---------|
+| **Node.js** | Server-side runtime |
+| **Express.js** | Backend framework |
+| **EJS** | Templating engine |
+| **MySQL2** | Database driver |
+| **Multer** | File uploads |
+| **Express-Session** | Authentication |
+| **BcryptJS** | Password hashing |
+
+---
+## 📁 Folder Structure
+
 shopease/
 ├── public/
-│   └── uploads/        # Uploaded images
+│ ├── css/
+│ ├── js/
+│ └── uploads/
 ├── views/
-│   ├── register.ejs
-│   ├── login.ejs
-│   ├── home.ejs
-│   ├── admin.ejs
-│   └── product.ejs
-├── server.js           # Main server file
+│ ├── layout.ejs
+│ ├── login.ejs
+│ ├── register.ejs
+│ ├── home.ejs
+│ ├── product.ejs
+│ └── admin.ejs
+├── server.js
 ├── package.json
 └── README.md
+
+
