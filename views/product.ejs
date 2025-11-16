@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Order Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            padding: 20px;
+        }
+        .image-container {
+            width: 40%;
+            margin-right: 20px;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+        .details-container {
+            width: 60%;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        .price {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .buttons-container {
+            display: flex;
+            gap: 15px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .buy-now {
+            background-color: #ff5733;
+            color: white;
+        }
+        .add-to-cart {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Product Image Section -->
+    <div class="image-container">
+        <img src="your-image-link.jpg" alt="Product Image">
+    </div>
+
+    <!-- Product Details Section -->
+    <div class="details-container">
+        <h1>Product Name</h1>
+        <p>This is the product description. It provides an overview of the features, benefits, and specifications of the product. This section can be as detailed as necessary to convince the customer to make a purchase.</p>
+        <div class="price">$49.99</div>
+
+        <!-- Buttons Section -->
+        <div class="buttons-container">
+            <button class="button buy-now" onclick="window.location.href='checkout-page-url'">Buy Now</button>
+            <button class="button add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Function to simulate adding to cart (can be expanded with actual cart logic)
+    function addToCart() {
+        alert("Product added to cart!");
+    }
+</script>
+
+</body>
+</html>

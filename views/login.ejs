@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #6D6D6D;
+        }
+
+        /* Split Container */
+        .container {
+            display: flex;
+            width: 800px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Left Panel */
+        .left-panel {
+            background-color: #A7C7A2;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .left-panel img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+            /* max-width: 250px; */
+        }
+
+        .left-panel h2 {
+            color: #fff;
+            text-shadow: 1px 1px 2px black;
+            
+        }
+
+        /* Right Panel */
+        .right-panel {
+            width: 50%;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .btn-login {
+            width: 100%;
+            padding: 12px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-login:hover {
+            background-color: #555;
+        }
+
+        .google-login {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .google-login a {
+            text-decoration: none;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .register {
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <img src="https://blog.hubspot.com/hubfs/ecommerce-10.jpg" alt="Bird">
+            <h2>Welcome to ShopEase</h2>
+        </div>
+        <div class="right-panel">
+            <h1>Login</h1>
+            <form action="/login" method="POST">
+                <div class="input-group">
+                    <label for="username">Username or Email:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn-login">Sign in</button>
+            </form>
+            <div class="google-login">
+                <a href="#">Sign in with Google</a>
+            </div>
+            <div class="register">
+                <a href="#">New to ShopEase? Create Account</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

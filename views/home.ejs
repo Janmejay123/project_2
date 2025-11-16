@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        body{
+            background: linear-gradient(90deg, #f8f9fa, #e9ecef, #dee2e6, #ced4da);
+        }
+        .heading{
+            background: linear-gradient(360deg, rgb(31, 27, 27), rgba(0, 0, 0, 0.642));
+            color: yellow;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 10px 10px 10px #000000a8;
+        }
+        .navbar{
+            box-shadow: 10px 10px 10px #000000a8;
+        }
+        .navbar-brand{
+            background: #000;
+            padding: 8px;
+            border-radius: 8px;
+        }
+        .btn-danger{
+          margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="https://freelogopng.com/images/all_img/1688364164amazon-logo-transparent.png" alt="" width="100"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+            </ul>
+            <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success">Logout</button>
+            </form> -->
+            
+            <button class="btn btn-outline-warning">
+              <i class="fa fa-shopping-cart"></i>
+              <img src="https://tse2.mm.bing.net/th?id=OIP.zTQtCxx98ci6c1WTAo1n1QHaHa&pid=Api&P=0&h=180" alt="Cart Icon" width="20" height="20">
+              Cart <span class="cart-count" id="cart-count">0</span>
+            </button>
+          </button>
+          <button class="btn btn-danger" >
+              <a class="nav-link" href="/logout">Log out</a>
+          </button>
+          
+          </div>
+        </div>
+      </nav>
+
+      <br><br><br>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <a href="/product"><img src="https://img.freepik.com/premium-photo/modern-exclusive-laptop-image-generated-ai_644690-2751.jpg" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Laptop</h5>
+                <p class="card-text">Powerful laptop with the latest specs.</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+                <a href="#" id="addCart" class="btn btn-warning add-to-cart">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="https://tse3.mm.bing.net/th?id=OIP.fgk1nqCD-Ufjxm9SPdkjiwHaEg&pid=Api&P=0&h=180" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Smartphone</h5>
+                <p class="card-text">Latest smartphone with amazing features.</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+                <a href="#" class="btn btn-warning add-to-cart">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="https://tse3.mm.bing.net/th?id=OIP.L5IT1_JUGHZmGWY9xarhJAHaFj&pid=Api&P=0&h=180" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Smart TV</h5>
+                <p class="card-text">Ultra HD Smart TV with stunning visuals.</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+                <a href="#" class="btn btn-warning add-to-cart">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <br><br><br>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="https://m.media-amazon.com/images/I/916GGqnsG+L._SX679_.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Camera</h5>
+                <p class="card-text">Powerful camera with the latest specs.</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+                <a href="#" class="btn btn-warning add-to-cart">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="https://tse1.mm.bing.net/th?id=OIP.cAt5yayGsNv6NgUlRjohLwHaHa&pid=Api&P=0&h=180" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Television</h5>
+                <p class="card-text">Latest <i class="fa fa-television" aria-hidden="true"></i> with amazing features.</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+                <a href="#" class="btn btn-warning add-to-cart">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="https://i5.walmartimages.com/asr/be11e965-2689-4caf-b144-b6c26d5d6f76_1.db6204004dd02a08f86dc62aa20283ab.jpeg?odnWidth=1000&odnHeight=1000&odnBg=ffffff" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Earbuds</h5>
+                <p class="card-text">Earbuds with noise cancellation.</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+                <a href="#" class="btn btn-warning add-to-cart">Add to Cart</a>
+              </div>
+            </div>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="https://www.ajmadison.com/ajmadison/images/large_no_watermark/rf28hdedtsr_009_front-incase-showcase-half-open-with-food_silver_de1fb.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">fridge</h5>
+                <p class="card-text"> French Door Refrigerator with 5 Spillproof Glass Shelves, Food ShowCase Fridge Door, Twin Cooling Plus System, CoolSelect Pantry, External Ice/Water Dispenser and LED Lighting.</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+                <a href="#" class="btn btn-warning add-to-cart">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="https://electromandu.com/wp-content/uploads/2023/02/whirlpool-7-kg.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Washing Machine</h5>
+                <p class="card-text">Latest washing Machine with amazing features.</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+                <a href="#" class="btn btn-warning add-to-cart">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="https://imgaz.staticbg.com/images/oaupload/ser1/banggood/images/AE/14/a815e590-1514-4839-a6ce-0776e0576c4d.JPG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Juicer</h5>
+                <p class="card-text">Ultra Juicer with amazing features.</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+                <a href="#" class="btn btn-warning add-to-cart">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <br><br><br>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="https://m.media-amazon.com/images/I/61vihvwHdBL._SX679_.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text">3D Deer Crystal Globe Lamp Creative Engraved Crystal Ball Night Light USB Table LED.</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+                <a href="#" class="btn btn-warning add-to-cart">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="https://m.media-amazon.com/images/I/61xr-fzqcxL._SX679_.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> Skating Cycle</h5>
+                <p class="card-text">Lifelong LLKS03 Foldable Kick Skating Cycle| Skate Scooter for Kids(Max User Weight: 50Kg) Kids Scooter (Pink)</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+                <a href="#" class="btn btn-warning add-to-cart">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="https://m.media-amazon.com/images/I/61INwJQRhqL._SX679_.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Wall Shelf</h5>
+                <p class="card-text">UHUD CRAFTS Wall Shelf for Living Room, Metallic Gold White Wall Mounted Shelves.</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+                <a href="#" class="btn btn-warning add-to-cart">Add to Cart</a>
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+      <script>
+        let cartCount = 0;
+        document.querySelectorAll(".add-to-cart").forEach(button => {
+            button.addEventListener("click", function() {
+                cartCount++;
+                document.getElementById("cart-count").innerText = cartCount;
+            });
+        });
+    </script>
+
+</body>
+</html>
