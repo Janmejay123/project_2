@@ -32,21 +32,22 @@ This project includes **user authentication**, **product uploads**, **image hand
 
 ---
 ## 📁 Folder Structure
-
 shopease/
 ├── public/
-│ ├── css/
-│ ├── js/
-│ └── uploads/
-├── views/
-│ ├── layout.ejs
-│ ├── login.ejs
-│ ├── register.ejs
-│ ├── home.ejs
-│ ├── product.ejs
-│ └── admin.ejs
-├── server.js
-├── package.json
-└── README.md
-
-
+│   ├── css/                # Stylesheets for UI
+│   │   └── styles.css
+│   ├── js/                 # Frontend JS (image preview, UI interactions)
+│   │   └── main.js
+│   └── uploads/            # Uploaded product images
+│
+├── views/                  # EJS templates for UI pages
+│   ├── layout.ejs          # Common layout wrapper
+│   ├── register.ejs        # User registration page
+│   ├── login.ejs           # Login page
+│   ├── home.ejs            # Product gallery page
+│   ├── product.ejs         # Upload product form
+│   └── admin.ejs           # Admin dashboard (delete products)
+│
+├── server.js               # Main backend server (Express + Multer + MySQL)
+├── package.json            # Project dependencies and scripts
+└── README.md               # Documentation
